@@ -28,3 +28,18 @@ Check the current release and if necessary, update it in the command below:
 
 `docker–compose –version`
 
+If seeing error `max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]`
+Increase it with: `sudo sysctl -w vm.max_map_count=262144`
+
+### Run
+`git clone https://github.com/agrigory1982/sonarqube-docker-psql.git`
+
+`cd sonarqube-docker-psql`
+
+`sudo docker-compose up`
+
+### Help
+Links:
+https://www.azuredevopslabs.com/labs/vstsextend/sonarqube/
+https://msftplayground.com/2019/02/combining-sonarqube-and-azure-devops/
+
